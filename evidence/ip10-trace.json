@@ -1,0 +1,18 @@
+{
+  "ip": "ip10-trace",
+  "description": "Distributed trace with span names",
+  "timestamp": "2026-09-03T05:59:00Z",
+  "evidence": {
+    "trace_id": "6e5a4abec79748518a641e85c279260c",
+    "span_names": [
+      "lab28.gateway.request",
+      "POST /api/v1/feedback http receive",
+      "POST /api/v1/feedback http send",
+      "lab28.api.ingest",
+      "lab28.kafka.produce"
+    ],
+    "services_in_trace": ["lab28-gateway", "lab28-api"],
+    "jaeger_url": "http://localhost:16686"
+  },
+  "services": ["jaeger", "otel-collector"]
+}

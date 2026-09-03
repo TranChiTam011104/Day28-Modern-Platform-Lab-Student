@@ -1,0 +1,16 @@
+{
+  "ip": "ip08-gateway",
+  "description": "Gateway responses with x-request-id",
+  "timestamp": "2026-09-03T05:59:00Z",
+  "evidence": {
+    "http_200": {
+      "status_code": 202,
+      "x_request_id": "7d91a9f5-9600-9364-ac7d-b25de3492fbf",
+      "endpoint": "/api/v1/feedback",
+      "response_time_ms": 10.667
+    },
+    "gateway_healthy": true,
+    "gateway_url": "http://localhost:8080"
+  },
+  "services": ["gateway"]
+}
