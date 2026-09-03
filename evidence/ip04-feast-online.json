@@ -1,0 +1,20 @@
+{
+  "ip": "ip04-feast-online",
+  "description": "Feast online feature retrieval",
+  "timestamp": "2026-09-03T05:59:00Z",
+  "evidence": {
+    "feast_url": "http://localhost:6566",
+    "request": {
+      "entities": {"asker_id": ["asker-001"]},
+      "features": ["asker_activity_v1:feedback_count", "asker_activity_v1:avg_rating"]
+    },
+    "response": {
+      "asker_id": "asker-001",
+      "feedback_count": 2,
+      "avg_rating": 5.0,
+      "status": "PRESENT",
+      "event_timestamp": "2026-09-03T05:36:47Z"
+    }
+  },
+  "services": ["feast"]
+}

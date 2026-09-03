@@ -1,0 +1,20 @@
+{
+  "ip": "ip01-kafka-consume",
+  "description": "Kafka consumer with headers preserved",
+  "timestamp": "2026-09-03T05:59:00Z",
+  "evidence": {
+    "trace_id": "6e5a4abec79748518a641e85c279260c",
+    "topic": "data.raw",
+    "headers_preserved": [
+      "traceparent",
+      "idempotency-key"
+    ],
+    "operation_names": [
+      "lab28.gateway.request",
+      "POST /api/v1/feedback",
+      "lab28.api.ingest",
+      "lab28.kafka.produce"
+    ]
+  },
+  "services": ["kafka", "gateway", "api"]
+}

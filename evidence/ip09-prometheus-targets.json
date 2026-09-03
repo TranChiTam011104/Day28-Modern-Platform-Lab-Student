@@ -1,0 +1,22 @@
+{
+  "ip": "ip09-prometheus-targets",
+  "description": "Prometheus targets status",
+  "timestamp": "2026-09-03T05:59:00Z",
+  "evidence": {
+    "active_targets": [
+      {"job": "lab28-airflow-batch", "health": "up", "scrape_url": "http://pushgateway:9091/metrics"},
+      {"job": "lab28-api", "health": "up", "scrape_url": "http://api:8000/metrics"},
+      {"job": "lab28-collector", "health": "up", "scrape_url": "http://otel-collector:8888/metrics"},
+      {"job": "lab28-feast", "health": "up", "scrape_url": "http://feast:8000/metrics"},
+      {"job": "lab28-gateway", "health": "up", "scrape_url": "http://gateway:9901/stats/prometheus"},
+      {"job": "lab28-kafka", "health": "up", "scrape_url": "http://kafka-exporter:9308/metrics"},
+      {"job": "lab28-mlflow", "health": "up", "scrape_url": "http://api:8000/metrics"},
+      {"job": "lab28-prometheus", "health": "up", "scrape_url": "http://prometheus:9090/metrics"},
+      {"job": "lab28-qdrant", "health": "up", "scrape_url": "http://qdrant:6333/metrics"},
+      {"job": "lab28-vllm-optional", "health": "down", "scrape_url": "http://host.docker.internal:8001/metrics", "note": "vLLM not connected (expected)"}
+    ],
+    "total_up": 9,
+    "total_down": 1
+  },
+  "services": ["prometheus", "otel-collector"]
+}

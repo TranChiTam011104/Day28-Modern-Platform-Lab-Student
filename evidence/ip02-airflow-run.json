@@ -1,0 +1,12 @@
+{
+  "ip": "ip02-airflow-run",
+  "description": "Airflow DAG run evidence",
+  "timestamp": "2026-09-03T05:59:00Z",
+  "evidence": {
+    "airflow_url": "http://localhost:8082",
+    "dag_id": "lab28_ingestion_pipeline",
+    "note": "Airflow DAG exists and is configured. Authentication required to fetch run details.",
+    "status": "configured"
+  },
+  "services": ["airflow", "spark-delta"]
+}
